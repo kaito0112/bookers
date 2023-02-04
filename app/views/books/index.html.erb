@@ -24,10 +24,10 @@
 
 <h3>New book</h3>
 
-  <% if @book&.errors&.any? %>
-    <%= @book&.errors&.count %>errors prohibited this book from being saved:
+  <% if @book.errors.any? %>
+    <%= @book.errors.count %>errors prohibited this book from being saved:
     <ul>
-      <% @book&.errors&.full_messages.each do |message| %>
+      <% @book.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
     </ul>
